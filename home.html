@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav__container">
+            <h2>Algorithm Visualizer</h2>
+            <ul class="nav__links">
+                <li><a href="#sorting">Sorting Algorithms</a></li>
+                <li><a href="#pathfinding">Path Finding</a></li>
+                <li><a href="#bst">Binary Search Tree</a></li>
+                <li><a href="#trie">Trie</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Visualize and Understand Algorithms</h1>
+            <p>Master the core concepts of algorithms with interactive visualizations and detailed explanations.</p>
+            
+            <div class="hero-content">
+                <h2>Why Learn Algorithms?</h2>
+                <ul>
+                    <li>📌 <strong>Step-by-Step Breakdowns:</strong> Understand complex algorithms with interactive walkthroughs.</li>
+                    <li>📊 <strong>Graphical Visualizations:</strong> See how algorithms work in real time.</li>
+                    <li>⚡ <strong>Performance Comparisons:</strong> Analyze time and space complexity for better optimization.</li>
+                    <li>💡 <strong>Practical Applications:</strong> Learn how algorithms are used in AI, data structures, and real-world problems.</li>
+                    <li>🖥️ <strong>Hands-On Experience:</strong> Experiment with live code implementations.</li>
+                </ul>
+            </div>
+    
+            <div class="hero-quote">
+                <blockquote>
+                    "Algorithms + Data Structures = Programs" – <em>Niklaus Wirth</em>
+                </blockquote>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Algorithm Details Section -->
+    <section class="algorithms">
+        <div class="container">
+            <h2 style="color: rgb(207, 219, 147);">Explore Different Algorithms</h2>
+
+            <!-- Sorting Algorithms -->
+            <div class="algo" id="sorting">
+                <h3>Sorting Algorithms</h3>
+                <p>Sorting algorithms arrange elements in a specific order (ascending/descending). Common sorting techniques:</p>
+                <ul>
+                    <li><strong>Bubble Sort:</strong> Repeatedly swaps adjacent elements if they are in the wrong order.</li>
+                    <li><strong>Selection Sort:</strong> Finds the smallest element and swaps it with the first element.</li>
+                    <li><strong>Insertion Sort:</strong> Builds the sorted list one element at a time.</li>
+                    <li><strong>Merge Sort:</strong> Uses divide and conquer to sort the array efficiently.</li>
+                    <li><strong>Quick Sort:</strong> Selects a pivot and partitions the array recursively.</li>
+                    <li><strong>Heap Sort:</strong> Utilizes a heap data structure to sort elements.</li>
+                </ul>
+                <img  src="assets/sort_img.jpg" alt="Sorting Visualization">
+                <div class="button-container">
+                    <a href="./algos/sorting/index.html" class="btn">Explore Sorting Algorithms</a>
+                </div>
+            </div>
+
+            <!-- Path Finding Algorithms -->
+            <div class="algo" id="pathfinding">
+                <h3>Path Finding Algorithms</h3>
+                <p>Used in AI, robotics, and navigation systems to find the shortest path.</p>
+                <ul>
+                    <li><strong>Dijkstra’s Algorithm:</strong> Finds the shortest path between nodes in a graph.</li>
+                    <li><strong>A* Algorithm:</strong> Uses heuristics to optimize pathfinding.</li>
+                    <li><strong>Breadth-First Search (BFS):</strong> Explores the shortest path in an unweighted graph.</li>
+                    <li><strong>Depth-First Search (DFS):</strong> Explores as deep as possible before backtracking.</li>
+                </ul>
+                <img src="assets/path_img.jpg" alt="Path Finding Visualization">
+                <div class="button-container">
+                    <a href="./algos/path_finding/index.html" class="btn">Explore Path Finding Algorithms</a>
+                </div>
+            </div>
+
+            <!-- Binary Search Tree -->
+            <div class="algo" id="bst">
+                <h3>Binary Search Tree (BST)</h3>
+                <p>A hierarchical data structure where each node has at most two children.</p>
+                <ul>
+                    <li><strong>Insertion:</strong> Adds an element while maintaining BST properties.</li>
+                    <li><strong>Search:</strong> Finds an element using a divide-and-conquer approach.</li>
+                    <li><strong>Deletion:</strong> Removes an element while preserving BST structure.</li>
+                    <li><strong>Traversal:</strong> Preorder, Inorder, and Postorder traversal methods.</li>
+                </ul>
+                <img src="assets/bst.png" alt="BST Visualization">
+                <div class="button-container">
+                    <a href="./algos/bst/index.html" class="btn">Explore Search Algorithms</a>
+                </div>
+            </div>
+
+            <!-- Trie Data Structure -->
+            <div class="algo" id="trie">
+                <h3>Trie (Prefix Tree)</h3>
+                <p>Efficient for searching words in dictionaries and auto-complete systems.</p>
+                <ul>
+                    <li><strong>Insertion:</strong> Adds a word character by character.</li>
+                    <li><strong>Search:</strong> Checks if a word exists in the trie.</li>
+                    <li><strong>Deletion:</strong> Removes a word while maintaining efficiency.</li>
+                    <li><strong>Prefix Search:</strong> Finds all words starting with a given prefix.</li>
+                </ul>
+                <img src="assets/trie.png" alt="Trie Visualization">
+                <div class="button-container">
+                    <a href="./algos/trie/index.html" class="btn">Explore Trie Algorithms</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <small>&copy; 2025 Algorithm Visualizer. All rights reserved.</small>
+        </div>
+    </footer>
+
+</body>
+</html>
+<style>
+   
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('assets/bcs_img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    
+}
+
+/* Adding a subtle overlay for better readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+.container {
+    max-width: 100%;  /* Ensures it doesn't exceed screen width */
+    padding: 0 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #343f51;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav__links li {
+    display: inline;
+}
+
+.nav__links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/hero-bg.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(194, 208, 112);
+    padding: 20px;
+}
+
+.hero-content {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.hero-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hero-content li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.hero-quote {
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+/* Algorithm Section */
+.algorithms {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 100%;
+    padding: 40px 10px; /* Adjust padding to fit within screen */
+}
+
+
+.algo {
+    background: rgb(135, 176, 205);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+}
+
+.algo h3 {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.algo ul {
+    padding-left: 20px;
+}
+
+.algo img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    height:30rem;
+}
+.button-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #343f51;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+/* Fix for any extra unwanted scrolling */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #343f51;
+    color: white;
+    margin-top: 40px;
+}
+
+</style>

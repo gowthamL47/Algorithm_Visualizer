@@ -96,6 +96,22 @@ a {
 #visualizeButton {
   margin-right: 10px;
 }
+.home_btn{
+  position: absolute;
+  left: 61px;
+  top: 4%;
+  border-radius: 14px;
+  width: 86px;
+  height: 29px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.home_btn:hover {
+  background-color: #ffcc00; 
+  color: black; 
+}
 #clearButton {
   margin-left: 10px;
 }

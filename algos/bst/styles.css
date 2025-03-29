@@ -49,6 +49,21 @@ a {
 .button {
   width: 55px;
 }
+.home_btn{
+  position: absolute;
+  right: 101px;
+  top: 34%;
+  width: 69px;
+  height: 29px;
+  background-color: #343f51;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.home_btn:hover {
+  background-color: #ffcc00; 
+  color: black; 
+}
 
 #InsertNodeField,
 #DeleteNodeField {

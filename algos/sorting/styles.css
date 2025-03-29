@@ -129,6 +129,22 @@ a {
 #stopButton {
   margin-left: 10px;
 }
+.home_btn{
+  position: absolute;
+  right: 258px;
+  top: 4%;
+  border-radius: 14px;
+  width: 69px;
+  height: 29px;
+  background-color: #343f51;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.home_btn:hover {
+  background-color: #ffcc00; 
+  color: black; 
+}
 
 #generateButton {
   height: 25px;
